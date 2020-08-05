@@ -1,0 +1,82 @@
+table {
+    width: 400px;
+    border-width: 2px;
+    padding: 8px;
+}
+div .container-itens{
+    font-style: oblique;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 100px;
+    margin-top: 15px;
+    
+
+}
+.container-itens>label{
+    width: 100%;
+    display:block ;
+}
+body{
+    background-color: #f5ffbc;
+    
+}
+form{
+    align: center;
+    background-color: #787878;
+    border-radius: 30px;
+    border: 2px solid goldenrod;
+    margin:auto; 
+    width: 500px;
+    height: 450px;
+    
+}
+label{
+    padding-top: 2px;
+    color: white;
+}
+ button{
+     border-radius: 30px;
+     border: 3px solid #ffd375;
+     margin-top: 8px;
+     margin-bottom: 8px; 
+     background-color: #ffd375;
+     font-style: normal;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     cursor: pointer;
+     width: 18%;
+ }
+ button:focus{
+     outline: 0;
+ }
+ input{
+     border-radius: 100px;
+     background-color:rgb(255, 220, 131);
+     border: 2px solid white;
+    width: 45%;
+    
+ }
+ input:focus{
+     outline: 0;
+ }
+ .imc::placeholder{
+    color: black;
+    text-align: center;
+    height: 20%;
+ }
+ th{
+    background-color: goldenrod;
+    width: 100px;
+    color:black;
+    padding: 5px;
+    margin: 80px;
+ }
+ td{
+    text-align: center;
+    border: 3px solid  goldenrod;
+    background-color: #ffd375;
+ }
+ .altura{
+    margin-right: 600px;
+ }
+ .peso{
+     margin-right: 500px;
+ }

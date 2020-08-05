@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>IMC</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        function conta(){
+            let altura = parseFloat(document.getElementById('caixa_altura').value);
+            let peso   = parseFloat(document.getElementById('caixa_peso').value);
+            let resultado = peso/(altura*altura);
+                console.log(altura);
+                console.log(peso);
+                console.log(resultado);
+            document.getElementById('imc').value = resultado;
+        }
+
+
+    </script>
+
+  </head>
+  
+  <body>
+      <center>
+      <form>
+      <div class="container">
+    <div class="container-itens">
+        <label class="altura"><b>Altura (Ex: 1.70):</b></label>
+        <input id="caixa_altura" type="number"/>
+    </div>
+     <div class="container-itens">
+        <label class="peso"><b>Peso:</b></label>
+        <input id="caixa_peso" type="number"/>
+     </div>
+     <div class="container-itens">
+        <button type="reset">Limpar</button>
+        <button type="button" onclick="conta()">Calculo</button>
+     </div>
+     <div class="container-itens">
+         
+        <input type="text" id="imc" class="imc" placeholder="Resultado" readonly><br><br>
+     </div>
+        <table>
+            
+            <tr>
+                <th>IMC</th>
+                <th>Classificação</th>
+                <th>Obesidade</th>
+            </tr>
+            <tr>
+                <td>Menor que 18,5</td>
+                <td>Magreza</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Entre 18,5 e 24,9</td>
+                <td>Normal</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Entre 25,0 e 29,9</td>
+                <td>Sobrepeso</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Entre 30,0 e 39,9</td>
+                <td>Obesidade</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Maior que 40,0</td>
+                <td>Obesidade Grave</td>
+                <td>3</td>
+            </tr>
+            </table>
+        </div>
+    </form>
+      </center>
+  </body>
+</html>
